@@ -1,7 +1,5 @@
 const name = "Fatih";
 
-function sayMyName() {
+export default function sayMyName() {
   console.log(name);
 }
-
-module.exports = { sayMyName };
