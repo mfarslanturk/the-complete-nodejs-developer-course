@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "db": "/Users/viqor/mongodb/bin/mongod.exe --dbpath=/Users/viqor/mongodb-data",
-    "watch": "nodemon mongodb.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
