@@ -27,7 +27,9 @@ MongoClient.connect(
     // .countDocuments(query); const query = { countries: "Canada" };
     // *-Retrieve Distinct Values of a Field
     // .distinct(fieldName, query); const fieldName = "year"; const query = { directors: "Barbra Streisand" };
-    // *-Others https://www.mongodb.com/docs/drivers/node/current/usage-examples/command/
+    // *-Others 
+    // https://mongodb.github.io/node-mongodb-native/4.7/
+    // https://www.mongodb.com/docs/drivers/node/current/usage-examples/command/
 
     db.collection("users").findOne(
         { _id: new ObjectId("62becf8401b58d07a5e01f6b") },
