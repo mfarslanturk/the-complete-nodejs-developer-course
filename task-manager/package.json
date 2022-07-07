@@ -6,7 +6,11 @@
   "scripts": {
     "db": "/Users/viqor/mongodb/bin/mongod.exe --dbpath=/Users/viqor/mongodb-data",
     "start": "node src/index.js",
-    "dev": "env-cmd -e development nodemon src/index.js"
+    "dev": "env-cmd -e development nodemon src/index.js",
+    "test": "env-cmd -e test jest --watch --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +27,10 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
+    "@types/jest": "^28.1.4",
     "env-cmd": "^10.1.0",
-    "nodemon": "^2.0.18"
+    "jest": "^28.1.2",
+    "nodemon": "^2.0.18",
+    "supertest": "^6.2.4"
   }
 }
